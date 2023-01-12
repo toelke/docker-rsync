@@ -49,7 +49,7 @@ spec:
         - name: rsync
           image: toelke158/docker-rsync
           volumeMounts:
-            - name: home
+            - name: data
               mountPath: /data
 ---
 apiVersion: batch/v1
@@ -115,8 +115,7 @@ spec:
               command: ['/bin/sh']
               args:
                 - -c
-                - |
-                  restic --verbose --repo repo --host foo --tag foo backup /data && \
+                - restic --verbose --repo repo --host foo --tag foo backup /data
               volumeMounts:
                 - mountPath: /data
                   name: data
