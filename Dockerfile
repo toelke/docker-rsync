@@ -1,4 +1,4 @@
-FROM debian:bullseye-20230109 AS downloader
+FROM debian:bullseye-20230202 AS downloader
 
 RUN apt-get update && apt-get install -y rsync
 RUN mkdir /libs; \
