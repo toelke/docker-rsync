@@ -124,3 +124,7 @@ spec:
             - name: data
               emptyDir: {}
 ```
+
+# License
+
+Since part of this repository is copied from [this stackoverflow post](https://serverfault.com/questions/741670/rsync-files-to-a-kubernetes-pod), the whole repository is under Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0).
