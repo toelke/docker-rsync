@@ -1,4 +1,4 @@
-FROM debian:bookworm-20241111 AS downloader
+FROM debian:bookworm-20241202 AS downloader
 
 RUN apt-get update && apt-get install -y rsync
 RUN mkdir /libs; \
