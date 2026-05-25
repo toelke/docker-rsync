@@ -1,4 +1,4 @@
-FROM debian:trixie-20260505 AS downloader
+FROM debian:trixie-20260518 AS downloader
 
 RUN apt-get update && apt-get install -y rsync
 RUN mkdir /libs; \
